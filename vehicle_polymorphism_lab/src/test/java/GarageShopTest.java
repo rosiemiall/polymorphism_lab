@@ -1,3 +1,7 @@
+import models.Boat;
+import models.CamperVan;
+import models.Car;
+import models.GarageShop;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

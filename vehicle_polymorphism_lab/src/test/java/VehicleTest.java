@@ -9,7 +9,7 @@ public class VehicleTest {
 //
 //    @BeforeEach
 //    void setUp() {
-//        car = new Car("car", 1000, 50, "VW", false);
+//        car = new models.Car("car", 1000, 50, "VW", false);
 //    }
 //
 //    @Test

@@ -1,3 +1,4 @@
+import models.Car;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -36,5 +37,15 @@ public class CarTest {
     void canChangeTires(){
         car.changeTires();
         assertThat(car.checkWinterTires()).isEqualTo(true);
+    }
+
+    @Test
+    void canMakeNoise(){
+        assertThat(car.makeNoise()).isEqualTo("beep beep");
+    }
+
+    @Test
+    void canMakeNoise__withArgument(){
+        assertThat(car.makeNoise("unhealthy")).isEqualTo("gargle of an unhealthy car");
     }
 }

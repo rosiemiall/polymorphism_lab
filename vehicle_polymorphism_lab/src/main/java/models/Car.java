@@ -1,4 +1,8 @@
-public class Car extends Vehicle{
+package models;
+
+import models.Vehicle;
+
+public class Car extends Vehicle {
     private String brand;
     private boolean tires;
     public Car(String name, double price, double fuelLevel, String brand, boolean tires){
@@ -14,14 +18,17 @@ public class Car extends Vehicle{
 
     public void changeTires() {
         this.tires = !this.tires;
+
     }
 
     @Override
     public String makeNoise(){
         return "beep beep";
     }
+
+//    added an overload method
     public String makeNoise(String message){
-        return "gargle of a" + message + " car";
+        return "gargle of an " + message + " car";
     }
 
 }

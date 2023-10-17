@@ -1,3 +1,4 @@
+import models.Boat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -36,4 +37,9 @@ public class BoatTest {
         boat.addAnchor();
         assertThat(boat.checkAnchor()).isEqualTo(true);
     }
+    @Test
+    void canFloats(){
+        assertThat(boat.floats(false)).isEqualTo("This boat can't float");
+    }
+
 }

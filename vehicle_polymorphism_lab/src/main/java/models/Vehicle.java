@@ -1,3 +1,5 @@
+package models;
+
 public abstract class Vehicle {
 
     protected String name;
@@ -9,6 +11,11 @@ public abstract class Vehicle {
         this.price = price;
         this.fuelLevel = fuelLevel;
     }
+
+
+//    an abstract method in the super class
+    public abstract String makeNoise();
+
 
     public double checkFuel() {
         return this.fuelLevel;
