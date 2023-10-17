@@ -12,21 +12,21 @@ public class CarTest {
         car = new Car("car", 1000, 50, "VW", false );
     }
 
-//    @Test
-//    void canCheckFuel(){
-//        assertThat(car.checkFuel()).isEqualTo(50);
-//    }
-//
-//    @Test
-//    void canFillFuel(){
-//        car.fillFuel();
-//        assertThat(car.checkFuel()).isEqualTo(100);
-//    }
-//
-//    @Test
-//    void canGetPrice(){
-//        assertThat(car.getPrice()).isEqualTo(1000);
-//    }
+    @Test
+    void canCheckFuel(){
+        assertThat(car.checkFuel()).isEqualTo(50);
+    }
+
+    @Test
+    void canFillFuel(){
+        car.fillFuel();
+        assertThat(car.checkFuel()).isEqualTo(100);
+    }
+
+    @Test
+    void canGetPrice(){
+        assertThat(car.getPrice()).isEqualTo(1000);
+    }
     @Test
     void canGetBrand(){
         assertThat(car.getName()).isEqualTo("car");

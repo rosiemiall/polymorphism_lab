@@ -15,4 +15,13 @@ public class Car extends Vehicle{
     public void changeTires() {
         this.tires = !this.tires;
     }
+
+    @Override
+    public String makeNoise(){
+        return "beep beep";
+    }
+    public String makeNoise(String message){
+        return "gargle of a" + message + " car";
+    }
+
 }
